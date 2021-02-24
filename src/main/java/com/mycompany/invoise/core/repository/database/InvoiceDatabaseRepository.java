@@ -1,5 +1,5 @@
 package com.mycompany.invoise.core.repository.database;
-
+/*
 import com.mycompany.invoise.core.entity.Invoice;
 import com.mycompany.invoise.core.repository.InvoiceRepositoryInterface;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,4 +56,4 @@ public class InvoiceDatabaseRepository implements InvoiceRepositoryInterface {
         );
 
     }
-}
+}*/

@@ -23,16 +23,16 @@ public class InvoiceNumberService implements InvoiceServiceInterface {
     }
 
     public Invoice createInvoice(Invoice invoice){
-        return invoiceRepositoryInterface.create(invoice);
+        return invoiceRepositoryInterface.save(invoice);
     }
 
     @Override
-    public List<Invoice> getInvoiceList() {
-        return invoiceRepositoryInterface.list();
+    public Iterable<Invoice> getInvoiceList() {
+        return invoiceRepositoryInterface.findAll();
     }
 
     @Override
     public Invoice getInvoiceByNumber(String number) {
-        return invoiceRepositoryInterface.getById(number);
+        return invoiceRepositoryInterface.findById(number).orElseThrow();
     }
 }

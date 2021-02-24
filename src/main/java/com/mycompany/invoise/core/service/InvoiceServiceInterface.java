@@ -8,6 +8,6 @@ import java.util.List;
 public interface InvoiceServiceInterface {
     void setInvoiceRepositoryInterface(InvoiceRepositoryInterface invoiceRepositoryInterface);
     Invoice createInvoice(Invoice invoice);
-    List<Invoice> getInvoiceList();
+    Iterable<Invoice> getInvoiceList();
     Invoice getInvoiceByNumber(String number);
 }
