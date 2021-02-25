@@ -22,6 +22,7 @@ public class InvoiceNumberService implements InvoiceServiceInterface {
         this.invoiceRepositoryInterface = invoiceRepositoryInterface;
     }
 
+    @Override
     public Invoice createInvoice(Invoice invoice){
         return invoiceRepositoryInterface.save(invoice);
     }
